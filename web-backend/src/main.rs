@@ -4,7 +4,7 @@ use axum::{
     routing::{get, post},
     Router,
 };
-use futures::StreamExt;
+use futures::{StreamExt, SinkExt};
 use serde::{Deserialize, Serialize};
 use std::{
     collections::HashMap,

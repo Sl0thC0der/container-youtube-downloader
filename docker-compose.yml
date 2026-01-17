@@ -1,12 +1,9 @@
-version: '3.8'
-
 services:
   ytdl-web:
     build: .
     container_name: ytdl-web
     ports:
       - "8080:8080"   # Web UI
-      - "4416:4416"   # PO Token Server
     volumes:
       - ./downloads:/data/downloads
       - ./config:/data/config

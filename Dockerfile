@@ -4,12 +4,12 @@
 # Stage 1: Build PO Token Provider
 FROM node:20-slim AS node-builder
 WORKDIR /app
-COPY bgutil-pot-provider ./bgutil-pot-provider
-WORKDIR /app/bgutil-pot-provider
+COPY bgutil-pot-provider/server ./server
+WORKDIR /app/server
 RUN npm install && npx tsc
 
 # Stage 2: Build Rust Web Backend
-FROM rust:1.75-slim AS rust-builder
+FROM rust:1.83-slim AS rust-builder
 WORKDIR /app
 
 # Install build dependencies
@@ -51,7 +51,7 @@ RUN pip install --user --no-cache-dir -r requirements.txt
 # Copy application files
 COPY --chown=ytdl:ytdl ytdl.py .
 COPY --chown=ytdl:ytdl config ./config
-COPY --chown=ytdl:ytdl --from=node-builder /app/bgutil-pot-provider ./bgutil-pot-provider
+COPY --chown=ytdl:ytdl --from=node-builder /app/server ./bgutil-pot-provider/server
 COPY --chown=ytdl:ytdl --from=rust-builder /app/web-backend/target/release/ytdl-web /usr/local/bin/
 
 # Fix all configs on startup
