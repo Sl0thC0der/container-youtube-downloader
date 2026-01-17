@@ -1,0 +1,14 @@
+{
+  "cookies_path": "config\\cookies.txt",
+  "output_path": "downloads\\Mobile",
+  "itag": "140",
+  "cover_format": "jpg",
+  "cover_size": 800,
+  "cover_quality": 90,
+  "no_synced_lyrics": false,
+  "template_folder": "{album_artist}/{album}",
+  "template_file": "{track:02d} {title}",
+  "temp_path": "temp",
+  "aria2c_path": "aria2c",
+  "ffmpeg_path": "ffmpeg"
+}

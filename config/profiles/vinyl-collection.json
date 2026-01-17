@@ -1,0 +1,13 @@
+{
+  "cookies_path": "config\\cookies.txt",
+  "output_path": "downloads\\Vinyl",
+  "itag": "251",
+  "cover_format": "png",
+  "cover_size": 1400,
+  "no_synced_lyrics": false,
+  "template_folder": "{album_artist}/{date:%Y} - {album}",
+  "template_file": "{track:02d} - {artist} - {title}",
+  "temp_path": "temp",
+  "aria2c_path": "aria2c",
+  "ffmpeg_path": "ffmpeg"
+}
