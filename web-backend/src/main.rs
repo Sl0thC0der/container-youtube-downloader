@@ -431,7 +431,7 @@ async fn retry_job(
 
 // File browser handler
 async fn list_files() -> Json<ApiResponse<Vec<FileInfo>>> {
-    let downloads_dir = PathBuf::from("/data/downloads");
+    let downloads_dir = PathBuf::from("/app/downloads");
     
     match fs::read_dir(&downloads_dir) {
         Ok(entries) => {
