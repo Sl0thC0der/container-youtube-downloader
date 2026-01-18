@@ -1,4 +1,4 @@
-# yt-download-container-ng
+# YT-Download-NG
 
 A modern, containerized YouTube Music downloader with a beautiful web interface. Built with Rust (Axum), Python (gytmdl), and Node.js (PO Token server).
 

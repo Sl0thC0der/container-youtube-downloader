@@ -1,4 +1,4 @@
-# yt-download-container-ng - Current Status
+# YT-Download-NG - Current Status
 
 ## ✅ Completed Features
 

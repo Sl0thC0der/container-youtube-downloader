@@ -1,6 +1,6 @@
-# Test the yt-download-container-ng Web API
+# Test the YT-Download-NG Web API
 
-Write-Host "=== Testing yt-download-container-ng API ===" -ForegroundColor Cyan
+Write-Host "=== Testing YT-Download-NG API ===" -ForegroundColor Cyan
 
 # Test 1: Health Check
 Write-Host "`n1. Health Check..." -ForegroundColor Yellow

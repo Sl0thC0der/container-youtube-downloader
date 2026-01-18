@@ -1,4 +1,4 @@
-# YouTube Music Downloader NG - Containerized Version
+# YT-Download-NG - Containerized YouTube Music Downloader
 # Multi-stage build for optimized image size
 
 # Stage 1: Build PO Token Provider

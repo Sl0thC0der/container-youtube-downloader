@@ -1,4 +1,4 @@
-# Host Download Wrapper for yt-download-container-ng
+# Host Download Wrapper for YT-Download-NG
 # This script runs on the Windows host and performs actual downloads
 # Called by the container via mounted volume
 

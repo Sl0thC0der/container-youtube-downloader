@@ -72,7 +72,7 @@ async fn main() {
         )
         .init();
 
-    info!("Starting YouTube Music Downloader NG Web Backend");
+    info!("Starting YT-Download-NG Web Backend");
 
     let state = AppState {
         jobs: Arc::new(RwLock::new(HashMap::new())),
@@ -372,7 +372,7 @@ const UI_HTML: &str = r#"<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Music Downloader NG</title>
+    <title>YT-Download-NG</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -503,7 +503,7 @@ const UI_HTML: &str = r#"<!DOCTYPE html>
 <body>
     <div class="container">
         <div class="header">
-            <h1>🎵 YouTube Music Downloader NG</h1>
+            <h1>🎵 YT-Download-NG</h1>
             <p>Fast, reliable, and beautiful music downloads</p>
         </div>
 
